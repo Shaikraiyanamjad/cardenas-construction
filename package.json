@@ -3,11 +3,13 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
- "scripts": {
+  "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "start": "vite preview",
-    "deploy": "npm run build && wrangler deploy"
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
