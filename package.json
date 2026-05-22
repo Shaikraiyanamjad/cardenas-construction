@@ -3,10 +3,11 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "scripts": {
+ "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "start": "vite preview",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
